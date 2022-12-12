@@ -9,10 +9,29 @@
 </head>
 
 <body>
-    <h1 id="title">Zenit Survey</h1>
-    <p id="description">Please fill in your information</p>
+    <header>
+        <h1 id="title">Zenit Survey</h1>
+        <p id="description">Please fill in your information</p>
+    </header>
 
-    <form id="durvey-form"></form>
+    <main>
+        <form id="durvey-form">
+            <label id="name-label" for="name">Name<input type="text" id="name" placeholder="Enter your name"></label>
+            <label id="email-label" for="email">Email<input type="email" id="email"
+                    placeholder="Enter your email"></label>
+            <label id="number-label" for="number">Age<input type="number" id="number" min="18" max="100"
+                    placeholder="Enter your age"></label>
+
+            <select name="project" id="dropdown">
+                <option value="select" selected>Select an option</option>
+                <option value="architectural">Architectural design</option>
+                <option value="structural">Structural design</option>
+                <option value="construction">Construction</option>
+                <option value="maintanance">Maintanance</option>
+            </select>
+        </form>
+    </main>
+
 
 </body>
 
