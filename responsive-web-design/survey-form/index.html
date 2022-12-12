@@ -22,13 +22,35 @@
             <label id="number-label" for="number">Age<input type="number" id="number" min="18" max="100"
                     placeholder="Enter your age"></label>
 
-            <select name="project" id="dropdown">
-                <option value="select" selected>Select an option</option>
-                <option value="architectural">Architectural design</option>
-                <option value="structural">Structural design</option>
-                <option value="construction">Construction</option>
-                <option value="maintanance">Maintanance</option>
-            </select>
+            <label id="dropdown-label" for="dropdown">What service do you need?
+                <select name="building" id="dropdown">
+                    <option value="select" selected>Select an option</option>
+                    <option value="residential">Residential Building</option>
+                    <option value="institutional">Institutional Building</option>
+                    <option value="business">Business Building</option>
+                    <option value="mercantile">Mercantile Building</option>
+                    <option value="storage">Storage Building</option>
+                </select>
+            </label>
+
+            <label id="radio-label" for="radio">How would you like us to contact you?
+                <input type="radio" id="radio" name="contact" value="phone"> Phone
+                <input type="radio" id="radio" name="contact" value="email"> Email
+            </label>
+
+            <label id="checkbox-label" for="service">What kind of services do you need?
+                <input type="checkbox" id="service" value="Architectural">Architectural Design
+                <input type="checkbox" id="service" value="Structural">Structural Design
+                <input type="checkbox" id="service" value="Construction">Construction
+                <input type="checkbox" id="service" value="Maintenance">Maintenance
+            </label>
+
+            <label id="textarea-label" for="about">Tell us more about your project
+                <input id="about" type="textarea">
+            </label>
+
+            <input type="submit" value="Submit">
+
         </form>
     </main>
 
