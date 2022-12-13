@@ -17,50 +17,59 @@
     <div class="survey">
         <main>
             <form id="survey-form">
-                <label id="name-label" for="name">Name<input type="text" id="name"
-                        placeholder="Enter your name"></label>
-                <label id="email-label" for="email">Email<input type="email" id="email"
-                        placeholder="Enter your email"></label>
-                <label id="number-label" for="number">Age<input type="number" id="number" min="18" max="100"
-                        placeholder="Enter your age"></label>
+                <fieldset>
+                    <label id="name-label" for="name">Name<input type="text" id="name"
+                            placeholder="Enter your name"></label>
+                    <label id="email-label" for="email">Email<input type="email" id="email"
+                            placeholder="Enter your email"></label>
+                    <label id="number-label" for="number">Age<input type="number" id="number" min="18" max="100"
+                            placeholder="Enter your age"></label>
 
-                <p>What service do you need?</p>
-                <label id="dropdown-label" for="dropdown">
-                    <select name="building" id="dropdown">
-                        <option value="select" selected>Select an option</option>
-                        <option value="residential">Residential Building</option>
-                        <option value="institutional">Institutional Building</option>
-                        <option value="business">Business Building</option>
-                        <option value="mercantile">Mercantile Building</option>
-                        <option value="storage">Storage Building</option>
-                    </select>
-                </label>
+                    <p>What kind of building?</p>
+                    <label id="dropdown-label" for="dropdown">
+                        <select name="building" id="dropdown">
+                            <option value="select" selected>Select an option</option>
+                            <option value="residential">Residential Building</option>
+                            <option value="institutional">Institutional Building</option>
+                            <option value="business">Business Building</option>
+                            <option value="mercantile">Mercantile Building</option>
+                            <option value="storage">Storage Building</option>
+                        </select>
+                    </label>
+                </fieldset>
 
-                <p>How do you want us to contact you?</p>
-                <label id="radio-label" for="phone">
-                    <input type="radio" id="phone" name="contact" value="phone" class="inline">Phone
-                </label>
-                <label for="email">
-                    <input type="radio" id="email" name="contact" value="email" class="inline">Email
-                </label>
+                <fieldset>
+                    <p>How do you want us to contact you?</p>
+                    <label id="radio-label" for="phone">
+                        <input type="radio" id="phone" name="contact" value="phone" class="inline">Phone
+                    </label>
+                    <label for="email">
+                        <input type="radio" id="email" name="contact" value="email" class="inline">Email
+                    </label>
+                </fieldset>
 
-                <p>What kind of services do you need?</p>
-                <label id="arch-label" for="architectural">
-                    <input type="checkbox" id="architectural" value="Architectural" class="inline">Architectural Design
-                </label>
-                <label id="struc-label" for="structural">
-                    <input type="checkbox" id="structural" value="Structural" class="inline">Structural Design
-                </label>
-                <label id="const-label" for="construction">
-                    <input type="checkbox" id="construction" value="Construction" class="inline">Construction
-                </label>
-                <label id="maint-label" for="maintenance">
-                    <input type="checkbox" id="maintenance" value="Maintenance" class="inline">Maintenance
-                </label>
+                <fieldset>
+                    <p>What kind of services do you need?</p>
+                    <label id="arch-label" for="architectural">
+                        <input type="checkbox" id="architectural" value="Architectural" class="inline">Architectural
+                        Design
+                    </label>
+                    <label id="struc-label" for="structural">
+                        <input type="checkbox" id="structural" value="Structural" class="inline">Structural Design
+                    </label>
+                    <label id="const-label" for="construction">
+                        <input type="checkbox" id="construction" value="Construction" class="inline">Construction
+                    </label>
+                    <label id="maint-label" for="maintenance">
+                        <input type="checkbox" id="maintenance" value="Maintenance" class="inline">Maintenance
+                    </label>
+                </fieldset>
 
-                <label id="textarea-label" for="about">Tell us more about your project
-                    <textarea name="" id="about" cols="30" rows="3" placeholder="Enter the info here..."></textarea>
-                </label>
+                <fieldset>
+                    <label id="textarea-label" for="about">Tell us more about your project
+                        <textarea name="" id="about" cols="30" rows="4" placeholder="Enter the info here..."></textarea>
+                    </label>
+                </fieldset>
 
                 <Button type="submit" value="Submit" class="sub">Submit</Button>
             </form>
