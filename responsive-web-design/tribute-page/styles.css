@@ -23,14 +23,17 @@ main {
 
 .image {
     background-color: whitesmoke;
+    padding: 2rem 0;
     margin: 2rem 1rem;
     border-radius: 5px;
 }
 
 img {
     max-width: 100%;
-    margin: 2rem 0 0.5rem 0;
+    display: block;
+    margin: 0 auto;
     height: auto;
+
 }
 
 h3 {
