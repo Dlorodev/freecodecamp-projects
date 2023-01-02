@@ -56,7 +56,7 @@ nav>ul>li {
 section>header {
     font-size: 2.5rem;
     font-weight: bold;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 section>h4 {
@@ -65,8 +65,35 @@ section>h4 {
 
 section>p {
     font-size: 1.5rem;
+    line-height: 1.5;
 }
 
 section>ul>li {
     font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+section>ol>li {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+p>a {
+    color: #92DCE5;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+code {
+    display: block;
+    font-size: 1.25rem;
+    margin-left: 30px;
+    margin-right: 90px;
+    background-color: #2c2f36;
+    color: #EEE5E9;
+    padding: 20px;
+    border: 1px;
+    border-radius: 3px;
+    line-height: 1.5;
+    filter: blur(0.25px);
 }
