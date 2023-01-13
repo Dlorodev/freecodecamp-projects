@@ -1,0 +1,97 @@
+* {
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    ;
+}
+
+header img {
+    width: 12%;
+    margin-left: 3rem;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-right: 4rem;
+}
+
+header ul li {
+    margin: 0 4rem;
+}
+
+#nav-bar {}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#sub-newsletter {
+    box-sizing: border-box;
+    width: 250px;
+    height: 300px;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#sub-newsletter h2 {
+    margin-bottom: 0;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+#sub-newsletter p {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+#form {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+
+#email {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    background-color: rgb(221, 220, 220);
+    border: solid rgb(221, 220, 220);
+    border-radius: 3px;
+}
+
+input[type="email"]::placeholder {
+    text-align: center;
+}
+
+#submit {
+    font-size: 1.5rem;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+}
