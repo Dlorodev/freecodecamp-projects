@@ -27,8 +27,6 @@ header ul li {
     margin: 0 4rem;
 }
 
-#nav-bar {}
-
 .nav-link {
     text-decoration: none;
     font-size: 2rem;
@@ -64,7 +62,7 @@ header ul li {
 }
 
 #sub-newsletter p {
-    margin-top: 0;
+    margin-top: 5px;
     font-size: 1.5rem;
 }
 
@@ -73,7 +71,7 @@ header ul li {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 }
 
 #email {
@@ -94,4 +92,53 @@ input[type="email"]::placeholder {
     border-radius: 3px;
     background-color: black;
     color: white;
+}
+
+#Products {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    border-top: 1px solid;
+}
+
+#Products h3 {
+    font-size: 3rem;
+    font-weight: 550;
+}
+
+#items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+#product-item {
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+#product-name {
+    margin-bottom: 0;
+}
+
+#product-price {
+    color: rgb(100, 99, 99);
+    margin-top: 0;
+}
+
+#Media {
+    margin-top: 4rem;
+}
+
+#video {
+    margin-top: 2rem;
+    
 }
