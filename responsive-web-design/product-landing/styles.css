@@ -163,5 +163,50 @@ p {
     text-align: justify;
 }
 
+footer {
+    width: 80%;
+    background-color: rgb(15, 15, 15);
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto auto;
 
+}
 
+footer>ul {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-end;
+    justify-content: space-between;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    list-style: none;
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+
+#foot-a {
+    font-size: 1.3rem;
+    color: rgb(132, 132, 132);
+    text-decoration: none;
+}
+
+#icons-link {
+    color: rgb(132, 132, 132);
+
+    text-decoration: none;
+}
+
+#icon {
+    font-size: 1.3rem;
+    margin-left: 8px;
+}
+
+footer>p {
+    font-size: 1.3rem;
+    color: rgb(132, 132, 132);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 5px;
+}
