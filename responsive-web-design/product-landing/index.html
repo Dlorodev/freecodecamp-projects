@@ -16,7 +16,8 @@
 
 <body>
     <header id="header">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Element_skateboards_logo.png" alt="Element logo">
+        <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/7/71/Element_skateboards_logo.png"
+            alt="Element logo">
         <nav id="nav-bar">
             <ul>
                 <li><a class="nav-link" href="#Products">Products</a></li>
@@ -31,7 +32,7 @@
             <h2>Want 10% Off?</h2>
             <p>Join our newsletter now</p>
             <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <input id="email" type="email" placeholder="Enter your email address" required>
+                <input id="email" name="email" type="email" placeholder="Enter your email address" required>
                 <input id="submit" type="submit">
             </form>
         </section>
@@ -61,8 +62,8 @@
         </section>
 
         <section id="Media">
-            <iframe id="video"  src="https://www.youtube.com/embed/E1ATeGCecWI"
-                title="YouTube video player" frameborder="0"
+            <iframe id="video" src="https://www.youtube.com/embed/E1ATeGCecWI" title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
         </section>
@@ -123,17 +124,19 @@
             <ul>
                 <li id="footer-items"><a id="foot-a" href="#Terms">Terms</a></li>
                 <li id="footer-items"><a id="foot-a" href="#Contact">Contact</a></li>
-                <li><div id="social-icons">
-                    <a id="icons-link" href="#">
-                        <i id="icon" class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a id="icons-link" href="#">
-                        <i id="icon" class="fa-brands fa-youtube"></i>
-                    </a>
-                    <a id="icons-link" href="#">
-                        <i id="icon" class="fa-brands fa-twitter"></i>
-                    </a>
-                </div></li>
+                <li>
+                    <div id="social-icons">
+                        <a id="icons-link" href="#">
+                            <i id="icon" class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a id="icons-link" href="#">
+                            <i id="icon" class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a id="icons-link" href="#">
+                            <i id="icon" class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </li>
             </ul>
             <p id="reserved">2022 - Elemental all rights reserved </p>
         </footer>
