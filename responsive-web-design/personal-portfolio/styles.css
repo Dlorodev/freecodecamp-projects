@@ -127,12 +127,12 @@ nav ul {
 }
 
 #projects h2 {
-    margin-top: 40px;
+    margin-top: 60px;
     font-size: 3rem;
 }
 
 #items {
-    margin-bottom: 0;
+    margin-bottom: 60px;
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 30px;
@@ -143,7 +143,7 @@ nav ul {
 }
 
 #proj {
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     width: 450px;
     height: 385px;
     border-radius: 5px;
@@ -162,9 +162,66 @@ nav ul {
 
 .project-title {
     font-size: 1.8rem;
-    color: aliceblue;
+    color: var(--color-text);
 }
 
 .project-title:hover {
     color: aliceblue;
+}
+
+#contact {
+    text-align: center;
+    background: url(./images/v748-toon-103.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+#contact-cont {
+    width: 55%;
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact h2 {
+    margin-top: 60px;
+    font-size: 3rem;
+    color: var(--color-text);
+    margin-bottom: 0;
+}
+
+#contact p {
+    font-size: 2.2rem;
+    text-align: center;
+    color: var(--color-text);
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+button {
+    background: none;
+    width: 25%;
+    height: 20%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    background-color: var(--color-1);
+    border: none;
+    border-radius: 5%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.10);
+    background: none;
+    border-left: 0.5px solid var(--color-1);
+    border-right: 0.5px solid var(--color-1);
 }
