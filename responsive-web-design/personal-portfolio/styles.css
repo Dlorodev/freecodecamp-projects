@@ -237,7 +237,6 @@ footer {
 
 footer p {
     font-size: 1.5rem;
-
 }
 
 footer p a {
@@ -249,5 +248,63 @@ footer p a {
 @media screen and (max-width: 1024px) {
     #navbar {
         width: 40%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .welcome-cont {
+        height: 50%;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    .welcome-cont h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #navbar {
+        margin-right: 15%;
+    }
+
+    #navbar ul li {
+        margin-left: 5%;
+    }
+
+    footer p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    #header {
+        width: 100vw;
+    }
+
+    #social-icons {
+        width: 95%;
+        justify-content: space-evenly;
+    }
+
+    #icon {
+        margin-left: 0;
+    }
+
+    #proj {
+        width: 95%;
     }
 }
