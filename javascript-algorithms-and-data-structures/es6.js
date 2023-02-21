@@ -90,4 +90,30 @@ const stats = {
 };
 //const half = (stats) => (stats.max + stats.min) / 2.0; 
 const half = ({ max, min }) => (max + min) / 2.0;
-console.log(half(stats));
+//console.log(half(stats));
+
+
+// Create Strings using template literals.
+const person = {
+    nickName: 'Zodiac',
+    age: 34,
+};
+const greeting = `Hello, my name is ${person.nickName}!
+and I am ${person.age} years old.`;
+//console.log(greeting);
+//console.log(person['age'])
+/*Use template literal syntax with backticks to create an array of list element (li) strings. Each list element's text should be one of the array elements from the failure property on the result object and have a class attribute with the value text-warning. The makeList function should return the array of list item strings.*/
+const result = {
+    success: ["max-length", "no-amd", "prefer-arrow-functions"],
+    failure: ["no-var", "var-on-top", "linebreak"],
+    skipped: ["no-extra-semi", "no-dup-keys"]
+};
+function makeList(arrr) {
+    const failureItems = [];
+    for (let i = 0; i < arrr.length; i++) {
+        failureItems.push(`<li class="text-warning">${arrr[i]}</li>`);
+    };
+    return failureItems;
+}
+const failuresList = makeList(result.failure);
+console.log(failuresList)
