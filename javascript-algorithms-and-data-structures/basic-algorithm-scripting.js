@@ -61,3 +61,64 @@ Remember, you can iterate through an array with a simple for loop, and access ea
 }
 console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
 */
+
+
+// Repeat a String Repeat a String
+/* Repeat a given string str (first argument) for num times (second argument). Return an empty string if num is not a positive number. For the purpose of this challenge, do not use the built-in .repeat() method. */
+/*function repeatStringNumTimes(str, num) {
+    let newStr = '';
+    for (let i = 0; i < num; i++) {
+        newStr += str;
+    }
+    return newStr;
+}
+console.log(repeatStringNumTimes('abc', 4))
+*/
+
+
+// Truncate a string
+/* Truncate a string (first argument) if it is longer than the given maximum string length (second argument). Return the truncated string with a ... ending. */
+/*function truncateString(str, num) {
+    if(str.length > num){
+      return str.slice(0, num) + "..."
+    }else{
+      return str
+    }
+  }
+  console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+  */
+
+
+// Finders keepers
+/* Create a function that looks through an array arr and returns the first element in it that passes a 'truth test'. This means that given an element x, the 'truth test' is passed if func(x) is true. If no element passes the test, return undefined. */
+
+
+// Title Case a Sentence
+/* Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
+For the purpose of this exercise, you should also capitalize connecting words like the and of. */
+/*function titleCase(str) {
+    let thisArr = str.split(' ')
+    let newArr = [];
+    let newStr = '';
+    for (let i = 0; i < thisArr.length; i++) {
+        newArr.push(thisArr[i][0].toUpperCase() + thisArr[i].slice(1).toLowerCase());
+    }
+    newStr = newArr.join(' ');
+    return newStr;
+}
+console.log(titleCase('sHoRt AnD sToUt'))*/
+
+
+//Falsy Bouncer
+/* Remove all falsy values from an array. Return a new array; do not mutate the original array.
+Falsy values in JavaScript are false, null, 0, "", undefined, and NaN. */
+/*function bouncer(arr) {
+    let trueArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i]) {
+            trueArr.push(arr[i]);
+        };
+    }
+    return trueArr;
+}
+console.log(bouncer([7, "ate", "", false, 9]));*/
