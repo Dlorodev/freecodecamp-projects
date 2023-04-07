@@ -95,9 +95,9 @@ console.log(repeatStringNumTimes('abc', 4))
 
 // Title Case a Sentence
 /* Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
-For the purpose of this exercise, you should also capitalize connecting words like the and of. */
-/*function titleCase(str) {
-    let thisArr = str.split(' ')
+For the purpose of this exercise, you should also capitalize connecting words like "the" and "of". */
+function titleCase(strTitle) {
+    let thisArr = strTitle.split(' ')
     let newArr = [];
     let newStr = '';
     for (let i = 0; i < thisArr.length; i++) {
@@ -106,22 +106,25 @@ For the purpose of this exercise, you should also capitalize connecting words li
     newStr = newArr.join(' ');
     return newStr;
 }
-console.log(titleCase('sHoRt AnD sToUt'))*/
+console.log(titleCase("I'm a little tea pot"));
+console.log(titleCase('sHoRt AnD sToUt'));
 
 
 //Falsy Bouncer
 /* Remove all falsy values from an array. Return a new array; do not mutate the original array.
 Falsy values in JavaScript are false, null, 0, "", undefined, and NaN. */
-/*function bouncer(arr) {
+function bouncer(arrBou) {
     let trueArr = [];
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i]) {
-            trueArr.push(arr[i]);
+    for (let i = 0; i < arrBou.length; i++) {
+        if (arrBou[i]) {
+            trueArr.push(arrBou[i]);
         };
     }
     return trueArr;
 }
-console.log(bouncer([7, "ate", "", false, 9]));*/
+console.log(bouncer([7, "ate", "", false, 9]));
+console.log(bouncer([false, null, 0, NaN, undefined, ""]));
+console.log(bouncer([null, NaN, 1, 2, undefined]));
 
 
 //Mutations
@@ -136,8 +139,10 @@ function mutation(arrMut) {
     for (let i = 0; i < arrStr2.length; i++) {
         if (arrStr1.indexOf(arrStr2[i]) < 0) {
             return false;
-        }; 
+        };
     };
     return true;
 };
-console.log(mutation(["hello", "Hello"]))
+console.log(mutation(["hello", "hey"]));
+console.log(mutation(["hello", "Hello"]));
+console.log(mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]));
