@@ -122,3 +122,22 @@ Falsy values in JavaScript are false, null, 0, "", undefined, and NaN. */
     return trueArr;
 }
 console.log(bouncer([7, "ate", "", false, 9]));*/
+
+
+//Mutations
+/* Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.
+For example, ["hello", "Hello"], should return true because all of the letters in the second string are present in the first, ignoring case.
+The arguments ["hello", "hey"] should return false because the string hello does not contain a y.
+Lastly, ["Alien", "line"], should return true because all of the letters in line are present in Alien. */
+function mutation(arrMut) {
+    let arrStr1 = arrMut[0].toLowerCase().split("");
+    let arrStr2 = arrMut[1].toLowerCase().split("");
+
+    for (let i = 0; i < arrStr2.length; i++) {
+        if (arrStr1.indexOf(arrStr2[i]) < 0) {
+            return false;
+        }; 
+    };
+    return true;
+};
+console.log(mutation(["hello", "Hello"]))
