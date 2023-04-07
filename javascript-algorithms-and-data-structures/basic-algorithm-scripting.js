@@ -106,8 +106,8 @@ function titleCase(strTitle) {
     newStr = newArr.join(' ');
     return newStr;
 }
-console.log(titleCase("I'm a little tea pot"));
-console.log(titleCase('sHoRt AnD sToUt'));
+// console.log(titleCase("I'm a little tea pot"));
+// console.log(titleCase('sHoRt AnD sToUt'));
 
 
 //Falsy Bouncer
@@ -122,9 +122,9 @@ function bouncer(arrBou) {
     }
     return trueArr;
 }
-console.log(bouncer([7, "ate", "", false, 9]));
-console.log(bouncer([false, null, 0, NaN, undefined, ""]));
-console.log(bouncer([null, NaN, 1, 2, undefined]));
+// console.log(bouncer([7, "ate", "", false, 9]));
+// console.log(bouncer([false, null, 0, NaN, undefined, ""]));
+// console.log(bouncer([null, NaN, 1, 2, undefined]));
 
 
 //Mutations
@@ -143,6 +143,20 @@ function mutation(arrMut) {
     };
     return true;
 };
-console.log(mutation(["hello", "hey"]));
-console.log(mutation(["hello", "Hello"]));
-console.log(mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]));
+// console.log(mutation(["hello", "hey"]));
+// console.log(mutation(["hello", "Hello"]));
+// console.log(mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]));
+
+
+//Chunky Monky
+/* Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array. */
+function chunkArrayInGroups(arrChunk, size) {
+    let newArrChunk = [];
+    for (let i = 0; i < arrChunk.length; i += size) {
+        newArrChunk.push(arrChunk.slice(i, i + size));
+    };
+    return newArrChunk;
+}
+console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
+console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5], 3));
+console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6], 3));
