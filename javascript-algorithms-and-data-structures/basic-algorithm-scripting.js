@@ -1,15 +1,16 @@
 //Reverse a string
 /* Reverse the provided string and return the reversed string.
 For example, "hello" should become "olleh". */
-/*function reverseString(str) {
+function reverseString(strRev) {
     let newStr = '';
-    for (let i = str.length - 1; i >= 0; i--) {
-        newStr += str[i];
+    for (let i = strRev.length - 1; i >= 0; i--) {
+        newStr += strRev[i];
     }
     return newStr;
 }
 console.log(reverseString("hello"));
-*/
+console.log(reverseString("Greetings from Earth"));
+
 
 //Factorialize as number
 /* Return the factorial of the provided integer.
@@ -17,21 +18,22 @@ If the integer is represented with the letter n, a factorial is the product of a
 Factorials are often represented with the shorthand notation n!
 For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
 Only integers greater than or equal to zero will be supplied to the function. */
-/*function factorialize(num) {
-    if (num === 0) {
+function factorialize(numFact) {
+    if (numFact === 0) {
         return 1;
     } else {
-        return num * factorialize(num - 1);
+        return numFact * factorialize(numFact - 1);
     }
 }
 console.log(factorialize(5));
-*/
+console.log(factorialize(10));
+
 
 //Find the longest word in a string
 /* Return the length of the longest word in the provided sentence.
 Your response should be a number. */
-/*function findLongestWordLength(str) {
-    let arr = str.split(' ');
+function findLongestWordLength(word) {
+    let arr = word.split(' ');
     let track = arr[0];
     for (let i = 0; i < arr.length; i++) {
         if (arr[i].length > track.length) {
@@ -41,18 +43,19 @@ Your response should be a number. */
     return track.length;
 }
 console.log(findLongestWordLength("The quick brown fox jumped over the lazy dog"));
-*/
+console.log(findLongestWordLength("What is the average airspeed velocity of an unladen swallow"));
+
 
 //Return largest numbers in arrays
 /* Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.
 Remember, you can iterate through an array with a simple for loop, and access each member with array syntax arr[i]. */
-/*function largestOfFour(arr) {
+function largestOfFour(arrOfFour) {
     let largestArr = [];
-    for (let i = 0; i < arr.length; i++) {
-        let track = arr[i][0];
-        for (let j = 0; j < arr[i].length; j++) {
-            if (arr[i][j] > track) {
-                track = arr[i][j];
+    for (let i = 0; i < arrOfFour.length; i++) {
+        let track = arrOfFour[i][0];
+        for (let j = 0; j < arrOfFour[i].length; j++) {
+            if (arrOfFour[i][j] > track) {
+                track = arrOfFour[i][j];
             }
         }
         largestArr.push(track);
@@ -60,33 +63,33 @@ Remember, you can iterate through an array with a simple for loop, and access ea
     return largestArr;
 }
 console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
-*/
+console.log(largestOfFour([[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
 
 
 // Repeat a String Repeat a String
 /* Repeat a given string str (first argument) for num times (second argument). Return an empty string if num is not a positive number. For the purpose of this challenge, do not use the built-in .repeat() method. */
-/*function repeatStringNumTimes(str, num) {
+function repeatStringNumTimes(str, num) {
     let newStr = '';
     for (let i = 0; i < num; i++) {
         newStr += str;
     }
     return newStr;
 }
-console.log(repeatStringNumTimes('abc', 4))
-*/
+console.log(repeatStringNumTimes('abc', 4));
+console.log(repeatStringNumTimes("*", 8));
 
 
 // Truncate a string
 /* Truncate a string (first argument) if it is longer than the given maximum string length (second argument). Return the truncated string with a ... ending. */
-/*function truncateString(str, num) {
-    if(str.length > num){
-      return str.slice(0, num) + "..."
-    }else{
-      return str
+function truncateString(str2, num2) {
+    if (str2.length > num2) {
+        return str2.slice(0, num2) + "..."
+    } else {
+        return str2
     }
-  }
-  console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
-  */
+}
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+console.log(truncateString("Peter Piper picked a peck of pickled peppers", 11));
 
 
 // Finders keepers
@@ -106,8 +109,8 @@ function titleCase(strTitle) {
     newStr = newArr.join(' ');
     return newStr;
 }
-// console.log(titleCase("I'm a little tea pot"));
-// console.log(titleCase('sHoRt AnD sToUt'));
+console.log(titleCase("I'm a little tea pot"));
+console.log(titleCase('sHoRt AnD sToUt'));
 
 
 //Falsy Bouncer
@@ -122,9 +125,9 @@ function bouncer(arrBou) {
     }
     return trueArr;
 }
-// console.log(bouncer([7, "ate", "", false, 9]));
-// console.log(bouncer([false, null, 0, NaN, undefined, ""]));
-// console.log(bouncer([null, NaN, 1, 2, undefined]));
+console.log(bouncer([7, "ate", "", false, 9]));
+console.log(bouncer([false, null, 0, NaN, undefined, ""]));
+console.log(bouncer([null, NaN, 1, 2, undefined]));
 
 
 //Mutations
@@ -143,9 +146,9 @@ function mutation(arrMut) {
     };
     return true;
 };
-// console.log(mutation(["hello", "hey"]));
-// console.log(mutation(["hello", "Hello"]));
-// console.log(mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]));
+console.log(mutation(["hello", "hey"]));
+console.log(mutation(["hello", "Hello"]));
+console.log(mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]));
 
 
 //Chunky Monky
@@ -160,3 +163,4 @@ function chunkArrayInGroups(arrChunk, size) {
 console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
 console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5], 3));
 console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6], 3));
+
